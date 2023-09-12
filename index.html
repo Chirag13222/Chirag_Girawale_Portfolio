@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="Chirag Girawale">
+    <meta name="title" content="Chirag Girawale || Frontend Developer">
+    <meta name="description"
+        content="Meu nome é Silas Rodrigues e eu desenvolvo aplicações web modernas com boas performances, boas práticas de programação, telas responsivas compatíveis com diferentes navegadores e configuração de SEO">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="theme-color" content="#470ba9">
+    <meta name="copyright" content="Silas Rodrigues 2022">
+    <meta http-equiv="cache-control" content="public">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="Silas Rodrigues, freelancer, programador, desenvolvedor, portfolio, frontend, autodidata">
+
+    <!-- Facebook Tags -->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:title" content="Silas Rodrigues - Desenvolvedor Front End - Programador">
+    <meta property="og:description" content="Meu nome é Silas Rodrigues e este é meu portfolio com alguns dos meus projetos pessoais de estudo,
+	sou programador e desenvolvo aplicações web">
+    <meta property="og:url" content="https://silasrodrigues.vercel.app">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Portfolio" />
+    <meta property="og:image" content="./assets/img/preview.png">
+    <meta property="og:image:width" content="1859" />
+    <meta property="og:image:height" content="884" />
+    <meta property="og:image:type" content="image/png" />
+
+    <!-- Twitter Tags -->
+    <meta property="twitter:creator" content="@Jinuye1">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://silasrodrigues.vercel.app">
+    <meta property="twitter:title" content="Silas Rodrigues - Desenvolvedor Front End - Programador">
+    <meta property="twitter:description" content="Meu nome é Silas Rodrigues e este é meu portfolio com alguns dos meus projetos pessoais de estudo,
+	sou programador e desenvolvo aplicações web">
+    <meta property="twitter:image" content="./assets/img/preview.png">
+
+    <title>Chirag Girawale</title>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png?=v2">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png?=v2">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png?=v2">
+    <link rel="manifest" href="./site.webmanifest">
+    <link id="favicon" rel="shortcut icon" type="image/png" href="./favicon.ico?=v2">
+
+    <!-- My styles -->
+    <link rel="preload" href="./assets/css/main.css" as="style">
+    <link rel="stylesheet" href="./assets/css/main.css">
+0
+    <!-- Google Fonts -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
+        rel="stylesheet" media="print" onload="this.media='all'">
+
+    <!-- JQuery Compatible with JQuery Mask-->
+    <link rel="preload" href="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" as="script">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- JQuery Validator -->
+    <script defer src="./assets/js/jquery.validate.min.js"></script>
+
+    <!-- Mask Plugin JQuery -->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        as="script">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+    <!-- Form Validator -->
+    <link rel="preload" href="./assets/js/formvalidator.js" as="script">
+    <script defer src="./assets/js/formvalidator.js"></script>
+
+    <!-- Validator Messages -->
+    <link rel="preload" href="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"
+        as="script">
+    <script defer src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/localization/messages_ptbr.js"></script>
+    <!-- Scripts need to be imported before </head> to resolve validation messages error -->
+    <link rel="canonical" href="https://silasrodrigues.vercel.app">
+
+    <!-- Hotjar Tracking Code for https://silasrodrigues.vercel.app -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () { (h.hj.q = h.hj.q || []).push(arguments) };
+            h._hjSettings = { hjid: 3379066, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script'); r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, 'https://static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+
+</head>
+
+<body ondragstart="false" class="body-theme">
+    <!-- Header -->
+    <header id="header" aria-label="Cabeçalho do site">
+        <div class="header container">
+            <div class="nav-bar">
+                <div class="brand">
+                    <a href="#home" class="scroll" rel="noreferrer">
+                        <img class="logo" src="./assets/img/logo.png" srcset="./assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="nav-list">
+                    <!-- Mobile Menu -->
+                    <input autocomplete="off" id="hamburger" type="checkbox">
+                    <label for="hamburger">
+                        <div class="menu">
+                            <div class="bar bar1"></div>
+                            <div class="bar bar2"></div>
+                            <div class="bar bar3"></div>
+                        </div>
+                    </label>
+                    <ul id="mobileExpanded" role="menubar" aria-label="Menu Mobile">
+                        <li>
+                            <a class="scroll" href="#about" data-after="About" role="menuitem">About</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#skills" data-after="Skills" role="menuitem">Skills</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#projects" data-after="Projects" role="menuitem">Projects</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#certificates" data-after="Courses" role="menuitem">Courses</a>
+                        </li>
+                        <li>
+                            <a class="scroll" href="#form" data-after="Contact" role="menuitem">Contact</a>
+                        </li>
+                        <li>    
+                            <a href="#theme-toggle" rel="noreferrer" aria-label="Mudar tema do site" data-after="Theme"
+                                class="iconLink" role="menuitem">
+                                <i accesskey="x" class="bi bi-cloud-moon" id="theme-toggle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Home Section -->
+    <section id="home" role="region" aria-label="Página inicial">
+        <div class="wrapperLoader">
+            <div id="loader">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="home container">
+            <div class="info container">
+                <h1 class="infoText">Hello,</h1>
+                <h1 class="infoText">Welcome</h1>
+                <h1 class="infoText">Meet My</h1>
+                <a href="#projects" type="button" class="cta scroll" aria-label="Veja os meus projetos">
+                    <span class="iconify portfolioIcon" data-icon="line-md:arrow-down"></span> Portfolio
+                </a>
+                <h2 class="arrayText">I am <span class="typed-text"></span><span class="cursor typing">&nbsp;</span>
+                </h2>
+            </div>
+            <div class="box">
+                <div class="imgBox">
+                    <a href="resume.pdf" target="_blank" aria-label="Veja o PDF do meu currículo">
+                        <img class="avatar" src="./assets/img/silas.webp" alt="Foto de Silas Rodrigues" loading="lazy">
+                    </a>
+                </div>
+                <div class="content">
+                    <p class="content-title">
+                        Chirag Girawale
+                        <span>Front End</span>
+                        <span class="age">20</span>
+                        <span>Pune - MH</span>
+                    </p>
+                </div>
+            </div>
+            <div class="rightArrow">
+                <span class="iconify" data-icon="flat-color-icons:down-right"></span>
+            </div>
+            <aside class="social" role="complementary" aria-label="Redes Sociais">
+                <span class="socialBtn">
+                    <span class="socialText">Sociais</span>
+                </span>
+                <div class="iconsBox">
+                    <i>
+                        <a href="https://wa.me/9011519974" target="_blank" rel="noreferrer" aria-label="WhatsApp"
+                            accesskey="w">
+                            <span class="iconify whatsapp" data-icon="whh:whatsapp" data-inline="false"></span>
+                        </a>
+                    </i>
+                    <i>
+                        <a href="https://twitter.com/chiraggirawale" target="_blank" rel="noreferrer" aria-label="Twitter"
+                            accesskey="t">
+                            <span class="iconify twitter" data-icon="websymbol:twitter-bird" data-inline="false"></span>
+                        </a>
+                    </i>
+                    <i>
+                        <a href="https://www.linkedin.com/in/silasrodrigues19" target="_blank" rel="noreferrer"
+                            aria-label="LinkedIn" accesskey="l">
+                            <span class="iconify linkedin" data-icon="line-md:linkedin"></span>
+                        </a>
+                    </i>
+                    <i>
+                        <a href="https://codepen.io/Chirag13222" target="_blank" rel="noreferrer"
+                            aria-label="CodePen" accesskey="c">
+                            <span class="iconify codepen" data-icon="mdi:codepen" data-inline="false"></span>
+                        </a>
+                    </i>
+                    <i>
+                        <a href="https://github.com/Chirag13222" target="_blank" rel="noreferrer"
+                            aria-label="Github" accesskey="g">
+                            <span class="iconify github" data-icon="eva:github-fill" data-inline="false"></span>
+                        </a>
+                    </i>
+                </div>
+            </aside>
+        </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- About Section -->
+    <section id="about" role="region" aria-labelledby="region-heading">
+        <div class="about container">
+            <div class="section-title">
+                <img data-aos="zoom-in-up" data-aos-anchor-placement="bottom-bottom" data-aos-duration="1200"
+                    data-aos-easing="ease" src="./assets/img/about.svg" alt="Imagem de Sobre" width="180" height="100">
+                <h1 data-aos="fade-down" id="region-heading"><span>About</span> Me</h1>
+                <hr data-aos="fade-down">
+                <p data-aos="fade-up">To know a little more about me, click on the images below.
+                </p>
+            </div>
+            <div class="boxInfo" data-aos="fade-up" data-aos-duration="900">
+                <ul role="tablist" aria-label="Lista de itens com informações sobre mim">
+                    <li id="tab-one" role="presentation">
+                        <img src="./assets/img/education.svg" alt="Imagem representando graduação" width="100"
+                            height="100">
+                        <h4>Education</h4>
+                    </li>
+                    <li id="tab-two" role="presentation">
+                        <img src="./assets/img/about_me.svg" alt="Imagem representando sobre mim" width="100"
+                            height="100">
+                        <h4>About</h4>
+                    </li>
+                    <li id="tab-three" role="presentation">
+                        <img src="./assets/img/experience.svg" alt="Imagem representando experiência" width="100"
+                            height="100">
+                        <h4>Experience</h4>
+                    </li>
+                    <li id="tab-four" role="presentation">
+                        <img src="./assets/img/plans.svg" alt="Imagem representando planos futuros" width="100"
+                            height="100">
+                        <h4>Plans</h4>
+                    </li>
+                </ul>
+                <div class="tabs-content">
+                    <div id="tab-one-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-one">
+                        <p>Graduated in  Bsci (Computer Science ) from Dr. D. Y. Patil University   
+                            <a href="https://www.dypcoeakurdi.ac.in/" target="_blank" rel="noreferrer"
+                                aria-label="Site da Faculdade Fatec">Dr.D.Y.Patil University</a> - 2021/2024 and since the always looking to participate in programming events and taking online course on teaching to empower myself more. 
+                        </p>
+                        <hr>
+                    </div>
+                    <div id="tab-two-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-two">
+                        <p>My name is Chirag , i'm 21 years old <span class="age"></span> and I study Web Development in self-taught basis . I have greater skills for Front End Development , but I have also had a contact with Back End Development.  </p>
+                        <hr>
+                    </div>
+                    <div id="tab-three-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-three">
+                     <div class="experience hideOnMobile">
+                            <p>Currently I'm  just maintaining my personal study projects and learning new things daily , this journey is shared through GitHub where I maintain public and private repositories , where each repository represents a project.
+                            </p>
+                            <p>Some of these projects are displayed below in the
+                                <a href="#projects">Projects</a>
+                                    tab but feel free to visit my
+                                <a href="https://github.com/SilasRodrigues19/" target="_blank" rel="noreferrer" aria-label="Perfil de Silas Rodrigues no GitHub">GitHub</a> profile as well.
+                            </p>
+                        </div>
+                        <div class="experience hideOnMobile">
+                            <p>My 2 New recent pojects are </p>
+                        </div>
+                        <div class="grid-experience">
+                            <div class="experience">
+                                <p>
+                                    Mazze game using JavaScript
+                                    <a href="https://chirag13222.github.io/puzzlegame/" target="_blank" rel="noreferrer" aria-label="Site da CRM Services">
+                                        Mazze Game
+                                    </a>
+                                </p>
+                            </div>
+                            <div class="experience">
+                                <p>
+                                    Dr Chat bot using python
+                                    <a href="https://chirag13222.github.io/Dr_Chat_bot/" target="_blank" rel="noreferrer" aria-label="Site da Quality Entregas">
+                                        Dr_Chat_Bot
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div> 
+                    <div id="tab-four-content-box" class="hideTabs" role="tabpanel" aria-labelledby="tab-four">
+                        <p>I seek to be person skilled in Web Development as a whole, currently learning Back End more and more and practicing to improve my skills in Front End  to beacome a Full Stack professional in the future. </p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section -->
+    <section id="skills" role="region" aria-labelledby="skills-heading">
+        <div class="section-title">
+            <h1 data-aos="fade-down" id="skills-heading">knowledge</h1>
+            <p data-aos="fade-up">Below are the main tools and technologies that I use in my projects.
+            </p>
+            <hr data-aos="fade-down">
+        </div>
+        <div class="knowledge-wrapper">
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="2+ years">
+                        <span class="iconify" data-icon="ph:file-html-duotone" data-inline="false"></span>
+                    </div>
+                    <p>Text markup lamguage for structuring and presenting we pages. </p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="2+ years">
+                        <span class="iconify" data-icon="fluent:document-css-24-regular" data-inline="false"></span>
+                    </div>
+                    <p>Used to style the  appearance of a  page,animate,use transitions ,and the like.</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="2+ years">
+                        <span class="iconify" data-icon="ph:file-js-duotone" data-inline="false"></span>
+                    </div>
+                    <p>Programming language that allows the creation of dynamic content and make it more interactive.
+                    </p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="500">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="1 year ~ 2 year">
+                        <span class="iconify" data-inline="false" data-icon="cib:react"></span>
+                    </div>
+                    <p>JavaScript library for creating user interfaces or  UI (user interface).
+                    </p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="500">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="2+ years">
+                        <span class="iconify" data-inline="false" data-icon="whh:mysqltwo"></span>
+                    </div>
+                    <p>Database management system, which uses the SQL language.</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="300">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="1 year ~ 2 year">
+                        <span class="iconify" data-inline="false" data-icon="cib:jquery"></span>
+                    </div>
+                    <p>JavaScript library that facilitates event handling,animations,HTML and AJAX usage
+                    </p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="950">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="1 year ~ 2 year">
+                        <span class="iconify" data-inline="false" data-icon="simple-icons:codeigniter"></span>
+                    </div>
+                    <p>Framework with high productivity for Back End development with PHP.
+                    </p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="6 months ~ 1 year">
+                        <span class="iconify" data-icon="mdi:material-ui"></span>
+                    </div>
+                    <p>Modern styling library for creating UI's.</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="3 months ~ 6 months">
+                        <span class="iconify" data-icon="ph:file-ts"></span>
+                    </div>
+                    <p>It is a strict syntactical superset of JavaScript and adds optional static typing to the language.</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="1200">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="3 months ~ 6 months">
+                        <span class="iconify" data-icon="bxl:firebase"></span>
+                    </div>
+                    <p>Provides several common services in web development to ensure more productivity</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="900">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="2+ years">
+                        <span class="iconify" data-icon="file-icons:php"></span>
+                    </div>
+                    <p>Programming language that allows the creation of dynamic content and makes it more interactive.
+                    </p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="1 year ~ 2 years" data-aos-delay="550">
+                        <span class="iconify" data-inline="false" data-icon="cib:sass-alt"></span>
+                    </div>
+                    <p>CSS extension language that provides more professional and dynamic control.</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="6 months ~ 1 year">
+                        <span class="iconify" data-icon="file-icons:tailwind"></span>
+                    </div>
+                    <p>Styling library with easy customization, adaptation and great productivity.</p>
+                </div>
+            </div>
+            <div class="knowledge" data-aos="fade-left" data-aos-duration="900" data-aos-delay="600">
+                <div class="knowledge-header">
+                    <div class="knowledge-icons" data-toggle="tooltip" title="6 months ~ 1 year">
+                        <span class="iconify" data-icon="fontisto:oracle"></span>
+                    </div>
+                    <p>Relational Database Management System</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Service Section -->
+
+    <!-- Projects Section -->
+    <section id="projects" role="region" aria-labelledby="projects-heading">
+        <div class="projects container">
+            <div class="projects-header">
+                <h1 class="section-title" id="projects-heading">
+                    <div data-aos="fade-down"><span>PERSONAL</span>PROJECTS</div>
+                    <hr data-aos="fade-down">
+                    <p data-aos="fade-right">The projects below do not have any employment relationship</p>
+                    <hr data-aos="fade-down">
+                    <p data-aos="fade-left">Click on the image to find out more about the respective project</p>
+                    <img data-aos="fade-down" data-aos-offset="200" data-aos-duration="1300"
+                        data-aos-easing="ease-in-sine" class="programmer" src="assets/img/programmer.svg" width="500"
+                        height="450" loading="lazy" alt="Imagem de Programador">
+                </h1>
+            </div>
+
+            <!-- Swiper -->
+            <div class="all-projects" data-aos="zoom-in" data-aos-offset="500">
+                <div class="project-item">
+                    <div class="project-info">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <!-- Project 1 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://findurjobteste.000webhostapp.com/" target="_blank"
+                                            rel="noopener" aria-label="FindUrJob - Aplicação para publicação e visualização de vagas">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="FindUrJob"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1687371033/findurjob_yvpgib_qfajsq.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Sistema para publicar e visualizar vagas de emprego</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 2 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://google-search-two.vercel.app/" target="_blank" rel="noopener"
+                                            aria-label="Google Clone com API da RapidAPI">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Google Clone"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1687371479/google-clone_tu88sx.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Google Clone</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 3 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://axie-infinity-lp.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Axie Infinity Landing Page">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Axie Infinity Landing Page"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/axie-lp_msq6su.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Axie Infinity Landing Page Fictícia</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 4 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://i-shoes.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Shoes Ecommerce Front End">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Front End Ecommerce"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/eccommerce_gvzrne.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Shoes Ecommerce Front End</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 5 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://photo-gallery-two.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Photo Gallery">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Photo Gallery"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/photo-gallery_xeevvz.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Photo Gallery com React, TypeScript e Firebase</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 6 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://github.com/SilasRodrigues19/dogcursos.epizy.com"
+                                            target="_blank" rel="noopener" aria-label="Dog Cursos">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Dog Cursos"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288961/fullPagePrint/dogcursos_oa4w7z.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:logo-github"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Student registration and enrollment management system
+                                                        </h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 7 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://github.com/SilasRodrigues19/Google-News-API" target="_blank"
+                                            rel="noopener" aria-label="Google News API">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Brazil Headlines"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/google-api_yc2zma.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:logo-github"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Querying news with the Google News API</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 8 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="http://webresources.epizy.com" rel="noreferrer" target="_blank"
+                                            rel="noopener" aria-label="Web Resources">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Web Resources"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1670004048/fullPagePrint/webresources_sexvtl.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Web Resources</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 9 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://github.com/SilasRodrigues19/Prize-draw-register"
+                                            target="_blank" rel="noreferrer" aria-label="Sistema de Cadastro">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Sistema de cadastro"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/login_zg04kc.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:logo-github"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Item registration system</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 10 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://github.com/SilasRodrigues19/CRUD-PDO" rel="noreferrer" aria-label="Cadastro de Clientes">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Cadastro de clientes"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288961/fullPagePrint/cadastro_wzhtqa.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:logo-github"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Customer registration and display</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- Project 11 -->
+                                <div class="swiper-slide">
+                                    <div class="wrapper">
+                                        <a href="https://random-quote-two.vercel.app" target="_blank" rel="noopener"
+                                            aria-label="Random Quote">
+                                            <div class="carousel">
+                                                <figure data-toggle="tooltip" title="Random Quote Generator"
+                                                    style="background: url('https://res.cloudinary.com/dqjhiewf1/image/upload/v1644288960/fullPagePrint/random-quote_u3bdfl.webp'); background-size: cover; background-position: top center;">
+                                                    <i>
+                                                        <span class="iconify" data-icon="ion:open-outline"></span>
+                                                    </i>
+                                                    <figcaption class="carousel-info">
+                                                        <h2>Random Quote</h2>
+                                                    </figcaption>
+                                                </figure>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Certificate Section -->
+    <section id="certificates" role="region" aria-labelledby="certificates-heading">
+        <div class="certificates container">
+            <div class="certificate-header">
+                <h1 class="section-title" data-aos="fade-down" id="certificates-heading">CERTIFICATES</h1>
+                <hr data-aos="fade-down">
+                <p class="certificate-scroll" data-aos="fade-right"></p>
+            </div>
+            <div class="certificate" data-aos="fade-up">
+                
+                
+                <a href="assets/img/certificados/WebDesign.avif" data-lightbox="mygallery" data-title="Web Design">
+                    <img src="assets/img/certificados/WebDesign.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de Web Design" data-aos="fade-up">
+                </a>
+                <a href="assets/img/certificados/html-full.avif" data-lightbox="mygallery"
+                    data-title="HTML Full Course">
+                    <img src="assets/img/certificados/html-full.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de HTML Completo" data-aos="fade-up">
+                </a>
+                <a href="assets/img/certificados/css-full.avif" data-lightbox="mygallery" data-title="CSS Full Course">
+                    <img src="assets/img/certificados/css-full.avif" width="200" height="150" loading="lazy"
+                        alt="Certificado de CSS Completo" data-aos="fade-up">
+                </a>
+                <a href="assets/img/certificados/design.avif" data-lightbox="mygallery" data-title="Graphic Design">
+                    <img src="assets/img/certificados/design.avif" width="200" height="150" loading="lazy"
+                        alt="Intensivo de Design Gráfico" data-aos="fade-up">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- End Certificate Section -->
+
+    <section class="progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+        <span class="progress-bar"></span>
+    </section>
+
+    <!-- Form Section -->
+    <section id="form" role="region" aria-labelledby="form-heading">
+        <div class="form container">
+            <div class="form-header">
+                <h1 class="section-title" id="form-heading">
+                    <div data-aos="fade-down"><span>PERSONAL</span> CONTACT</div>
+                    <hr data-aos="fade-down">
+                    <p data-aos="fade-left">Use the form below to send me a contact email</p>
+                </h1>
+            </div>
+            <div class="my-form" data-aos="zoom-in-up">
+                <div class="row">
+                    <div class="col-12 text-center my-5">
+                        <h1 class="display-4">
+                            <i class="fa fa-paper-plane">
+                                <span class="iconify" data-icon="si-glyph:paper-plane" data-inline="false"></span>
+                            </i> Contact form
+                        </h1>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-sm-12 col-md-10 col-lg-8">
+                        <form action="https://getform.io/f/b103cef7-a5b3-4930-8d0b-4ad1a30cfbb4" method="POST"
+                            id="formContact" target="_blank">
+                            <div class="form-row">
+                                <!-- Name -->
+                                <div class="form-group col-sm-6">
+                                    <label for="nome">Your Name</label>
+                                    <input autocomplete="off" type="text" class="form-control" name="nome" id="nome"
+                                        placeholder="Name">
+                                </div>
+
+                                <!-- Surname -->
+                                <div class="form-group col-sm-6">
+                                    <label for="sobrenome">Your Sirname </label>
+                                    <input autocomplete="off" type="text" class="form-control" name="sobrenome"
+                                        id="sobrenome" placeholder="Sirname">
+                                </div>
+                            </div>
+                            <!-- End Name and Surname rows -->
+
+                            <div class="form-row">
+                                <!-- Email -->
+                                <div class="form-group col-sm-6">
+                                    <label for="email">Your Email</label>
+                                    <input autocomplete="off" type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email">
+                                </div>
+
+                                <div class="form-group col-sm-6">
+                                    <!-- Phone -->
+                                    <label for="celular">Your Phone</label>
+                                    <input autocomplete="off" type="text" class="form-control" name="celular"
+                                        id="celular" placeholder="+91 0000000000" onclick="convertToIndianFormat()">
+                                </div>
+                            </div>
+                            <!-- End Email and Phone rows -->
+
+                            <div class="form-row">
+                                <div class="form-group col-sm-12">
+                                    <!-- Message -->
+                                    <label for="mensagem">Your Message</label>
+                                    <textarea autocomplete="off" class="form-control" name="mensagem" id="mensagem"
+                                        cols="30" rows="10" placeholder="Feel Free"
+                                        onkeyup="countLetters();"></textarea>
+                                </div>
+                            </div>
+                            <!-- End Message row -->
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                    <input autocomplete="off" type="submit" class="btn btn-secondary form-control"
+                                        value="To Send" id="btnSubmit" name="btnSubmit">
+                                </div>
+                                <div class="form-group col-sm-12">
+                                    <br>
+                                    <!-- Warning -->
+                                    <label>Total Digits: <span class="count">0</span>
+                                        <p class="charLimit"></p>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- End button and warning label row -->
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Form Section -->
+
+    <section id="cookies" class="cookies hide hideDown" role="region" aria-label="Session that informs about Cookies">
+        <div class="lgpd-information">
+            <p>
+                This website uses cookies to ensure you get the best experience.
+            </p>
+        </div>
+        <div class="lgpd-buttons">
+            <a class="private-policy" href="#">Privacy</a>
+            <button class="accept-policy">To accept</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" role="contentinfo">
+        <div class="footer container">
+            <div class="brand" data-aos="fade-down">
+                <h1>Chirag<span>Girawale</span></h1>
+            </div>
+            <h2 data-aos="fade-up" data-aos-duration="2500" data-aos-offset="0">Website Development</h2>
+            <div class="contact-icon">
+                <div class="contact-item text" data-toggle="tooltip" title="Pune - MH">
+                    <div data-aos="fade-left" data-aos-offset="0">
+                        <a href="" target="_blank" rel="noreferrer noopener"
+                            aria-label="Google Maps">
+                            <span class="iconify globe-americas" data-icon="gis:earth-america"
+                                data-inline="false"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item" data-toggle="tooltip" title="Contact Me on Email">
+                    <div data-aos="fade-up" data-aos-offset="0">
+                        <a href="mailto:silasrodrigues.fatec@gmail.com?subject=Contato%20Site" rel="noreferrer"
+                            aria-label="Gmail">
+                            <span class="iconify envelope"
+                                data-icon="emojione-monotone:closed-mailbox-with-lowered-flag"
+                                data-inline="false"></span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-item" data-toggle="tooltip" title="See My Resume ">
+                    <div data-aos="fade-right" data-aos-offset="0">
+                        <a href="resume.pdf" target="_blank" rel="noreferrer" aria-label="Currículo PDF">
+                            <span class="iconify file-pdf" data-icon="bi:file-earmark-pdf-fill"
+                                data-inline="false"></span>
+                        </a>
+                    </div>
+                </div>
+                <a id="smoothScroll" href="#home" data-aos="fade-down" data-aos-offset="0">
+                    <span class="iconify arrow-up" data-icon="bytesize:chevron-top" data-inline="false"></span>
+                </a>
+            </div>
+            <p class="copy"></p>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+    <!-- Icons Script -->
+    <script defer src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+
+    <!-- Smooth Scroll Function -->
+    <script defer src="assets/js/smooth-scroll.js"></script>
+
+
+    <!-- Sweet -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10/dist/sweetalert2.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.1/js/bootstrap.bundle.min.js"
+        integrity="sha512-mULnawDVcCnsk9a4aG1QLZZ6rcce/jSzEGqUkeOLy0b6q0+T6syHrxlsAGH7ZVoqC93Pd0lBqd6WguPWih7VHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Lightbox -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"
+        integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- Aos Animate -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script defer src="assets/js/script.js"></script>
+    <script defer src="assets/js/jquery.easing.min.js"></script>
+    <script defer src="assets/js/theme.js"></script>
+
+    <!-- Swiper JS -->
+    <link rel="preload" href="https://unpkg.com/swiper/swiper-bundle.min.js" as="script">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiper = new Swiper(".mySwiper", {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+            },
+        });
+
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+
+
+</body>
+
+</html>
